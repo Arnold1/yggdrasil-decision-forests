@@ -16,7 +16,6 @@ bazel 4.0.0
 
 Compile static library and go binary with bazel.
 
-```
 - Compile it:
 ```
 cd examples2

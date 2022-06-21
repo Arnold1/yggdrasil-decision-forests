@@ -3,6 +3,11 @@
 # Goal
 - Call yggdrasil from golang
 - Example is based on: https://github.com/google/yggdrasil-decision-forests/tree/main/examples
+- Bazel version:
+```
+# bazel --version
+bazel 4.0.0
+```
 - Compile it:
 ```
 ./compile_and_run.sh

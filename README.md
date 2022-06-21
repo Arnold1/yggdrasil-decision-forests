@@ -10,6 +10,7 @@ bazel 4.0.0
 ```
 - Compile it:
 ```
+cd examples2
 ./compile_and_run.sh
 ```
 - Current errors:

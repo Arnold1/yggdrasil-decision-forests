@@ -51,6 +51,7 @@ cc_library(
         "//yggdrasil_decision_forests/model:model_library",
         "//yggdrasil_decision_forests/utils:filesystem",
         "//yggdrasil_decision_forests/utils:logging",
+        "//yggdrasil_decision_forests/model:all_models",
     ],
 )
 

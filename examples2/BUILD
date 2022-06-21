@@ -1,4 +1,8 @@
 #load("@rules_cc//cc:defs.bzl", "cc_library")
+#load("//examples2:cc_library_static.bzl", "cc_static_library")
+
+load("//examples2:cc_static_library.bzl", "cc_static_library")
+#load("//examples2:cc_library_static.bzl", "cc_static_library")
 load("@io_bazel_rules_go//go:def.bzl", "go_binary")
 
 package(
@@ -65,5 +69,11 @@ go_binary(
         "mylib.hh",
     ],
     cdeps=[":mylib_a"],
+)
+
+cc_static_library(
+    name = "mylib_static",
+    deps = [":mylib_a"],
+    #dep = ":mylib_a",
 )
 

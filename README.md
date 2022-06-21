@@ -23,3 +23,9 @@ cd examples2
 [INFO mylib.cc:27] Import the model
 [FATAL mylib.cc:30] INVALID_ARGUMENT: Unknown item RANDOM_FOREST in class pool N26yggdrasil_decision_forests5model13AbstractModelE. Registered elements are
 ```
+
+- Try to build the static library:
+```
+cd examples2
+bazel build --config=linux_cpp17 --config=linux_avx2 --incompatible_require_linker_input_cc_api=false //examples2:mylib_static
+```

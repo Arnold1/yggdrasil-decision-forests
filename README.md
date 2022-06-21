@@ -2,7 +2,7 @@
 
 # Goal
 - Call yggdrasil from golang
-- Example is based on: https://github.com/google/yggdrasil-decision-forests/examples
+- Example is based on: https://github.com/google/yggdrasil-decision-forests/tree/main/examples
 - Compile it:
 ```
 ./compile_and_run.sh

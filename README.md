@@ -11,6 +11,12 @@
 # bazel --version
 bazel 4.0.0
 ```
+
+## Option 1
+
+Compile static library and go binary with bazel.
+
+```
 - Compile it:
 ```
 cd examples2
@@ -24,7 +30,11 @@ cd examples2
 [FATAL mylib.cc:30] INVALID_ARGUMENT: Unknown item RANDOM_FOREST in class pool N26yggdrasil_decision_forests5model13AbstractModelE. Registered elements are
 ```
 
-- Try to build the static library:
+## Option 2
+
+Build static library with bazel and run go build.
+
+- Build the static library:
 ```
 cd examples2
 root@2ea05d554c95:~/yggdrasil-decision-forests/examples2# bazel build --config=linux_cpp17 --config=linux_avx2 --incompatible_require_linker_input_cc_api=false //examples2:mylib_static
@@ -123,17 +133,16 @@ INFO: 1 process: 1 internal.
 INFO: Build completed successfully, 1 total action
 ```
 
-- Copy static libary to lib dir:
+- Copy static libary to the lib dir:
 ```
 root@2ea05d554c95:~/yggdrasil-decision-forests/examples2# cp ../bazel-bin/examples2/mylib_static.a ./lib/libmylib_a.a 
 ```
 
-- Run go app:
+- Run the go app:
 ```
 root@2ea05d554c95:~/yggdrasil-decision-forests/examples2# go run .
 1
 [INFO mylib.cc:27] Import the model
 [FATAL mylib.cc:30] INVALID_ARGUMENT: Unknown item RANDOM_FOREST in class pool N26yggdrasil_decision_forests5model13AbstractModelE. Registered elements are 
 exit status 1
-
 ```

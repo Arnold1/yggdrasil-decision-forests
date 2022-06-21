@@ -1,6 +1,7 @@
 # Overview
 
 # Goal
+- Code is based on: git clone --branch 0.2.4 --depth=1 https://github.com/google/yggdrasil-decision-forests
 - Call yggdrasil from golang
 - Example is based on: https://github.com/google/yggdrasil-decision-forests/tree/main/examples
 - Bazel version:

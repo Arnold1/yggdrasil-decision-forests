@@ -26,12 +26,9 @@ set -e
 #
 # Add "--config=use_tensorflow_io" to support TFRecord format natively.
 
+# --incompatible_require_linker_input_cc_api=fase -> https://github.com/bazelbuild/rules_go/issues/2720
 bazel build --config=linux_cpp17 --config=linux_avx2 --incompatible_require_linker_input_cc_api=false //examples2:main # mylib_a #beginner_cc
 
 # Run the example.
-# The "dataset_dir" should contains the "adult_train.csv" and "adult_test.csv"
-# files. See "beginner.cc"'s header for detailed explanations about the example.
 
-#../bazel-bin/examples/beginner_cc \
-#  --dataset_dir=../yggdrasil_decision_forests/test_data/dataset \
-#  --output_dir=/tmp/yggdrasil_decision_forest
+../bazel-bin/examples2/linux_amd64_stripped/main

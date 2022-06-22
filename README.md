@@ -25,6 +25,12 @@ gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0
 g++ (Ubuntu 11.2.0-19ubuntu1) 11.2.0
 ```
 
+# Cgo/Bazel issues
+- https://github.com/bazelbuild/rules_go/issues/1486
+- https://github.com/bazelbuild/bazel/issues/1920
+- https://github.com/slackhq/grpc-hack
+- https://github.com/bazelbuild/rules_go/pull/2584
+
 # Goal
 - Call yggdrasil from golang
 - Example2 is based on: https://github.com/google/yggdrasil-decision-forests/tree/main/examples

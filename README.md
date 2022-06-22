@@ -3,6 +3,11 @@
 # Origin of the source code
 - Code is based on: ```git clone --branch 0.2.4 --depth=1 https://github.com/google/yggdrasil-decision-forests```
 
+# Generated demo model
+
+The library (examples2/lib/mylib.cc) will look for the model under /tmp/my_saved_model/1/
+- Copy examples2/generated_model/tmp to /tmp
+
 # Install versions
 - Bazel version:
 ```

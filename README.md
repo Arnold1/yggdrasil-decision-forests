@@ -1,16 +1,33 @@
 # Overview
 
-# Origin of code
+# Origin of the source code
 - Code is based on: ```git clone --branch 0.2.4 --depth=1 https://github.com/google/yggdrasil-decision-forests```
 
-# Goal
-- Call yggdrasil from golang
-- Example is based on: https://github.com/google/yggdrasil-decision-forests/tree/main/examples
+# Install versions
 - Bazel version:
 ```
 # bazel --version
 bazel 4.0.0
 ```
+- Go version:
+```
+# go version
+go version go1.18.1 linux/amd64
+```
+- Gcc version:
+```
+# gcc --version
+gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0
+```
+- G++ version:
+```
+# g++ --version
+g++ (Ubuntu 11.2.0-19ubuntu1) 11.2.0
+```
+
+# Goal
+- Call yggdrasil from golang
+- Example2 is based on: https://github.com/google/yggdrasil-decision-forests/tree/main/examples
 
 ## Option 1
 

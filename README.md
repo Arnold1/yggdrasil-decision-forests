@@ -33,6 +33,10 @@ g++ (Ubuntu 11.2.0-19ubuntu1) 11.2.0
 # Cgo/Bazel issues
 - https://github.com/bazelbuild/rules_go/issues/1486
 - https://github.com/bazelbuild/bazel/issues/1920
+  - got cc_static_library.bzl from here:
+    - https://gist.github.com/oquenchil/3f88a39876af2061f8aad6cdc9d7c045
+  - got cc_library_static.bzl from here:
+    - https://github.com/slackhq/grpc-hack/blob/master/cc_library_static.bzl
 - https://github.com/slackhq/grpc-hack
 - https://github.com/bazelbuild/rules_go/pull/2584
 

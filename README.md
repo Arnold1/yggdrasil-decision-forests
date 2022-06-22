@@ -5,7 +5,7 @@
 
 # Generated demo model
 
-The library (examples2/lib/mylib.cc) will look for the model under /tmp/my_saved_model/1/
+The library (https://github.com/Arnold1/yggdrasil-decision-forests/blob/main/examples2/lib/mylib.cc#L28) will look for the model under /tmp/my_saved_model/1/assets
 - Copy examples2/generated_model/tmp to /tmp
 
 # Install versions
